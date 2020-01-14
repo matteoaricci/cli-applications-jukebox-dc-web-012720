@@ -33,8 +33,11 @@ def exit_jukebox
 end
 
 def run(songs) 
-  puts "Please enter a command:"
-  input = gets.strip
+  input = ""
+  
+  while input != "exit"
+    puts "Please enter a command:"
+    input = gets.chomp
   
     case input 
       when "list"
@@ -46,5 +49,5 @@ def run(songs)
       when "exit"
         exit_jukebox
       end
-      
+    end
 end
