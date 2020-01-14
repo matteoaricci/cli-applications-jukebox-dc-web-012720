@@ -7,9 +7,7 @@ def help
   puts "- exit : exits this program"
 end
 
-def play
-  puts "Please enter a song name or number: "
-  song_input = gets.strip
+def list
   
   
 end
