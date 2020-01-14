@@ -12,7 +12,7 @@ def list(song)
 end
 
 def play(song)
-  puts "Please enter a song name or a number:"
+  puts "Please enter a song name or number:"
   song_input = gets.strip
   
   puts song_input
