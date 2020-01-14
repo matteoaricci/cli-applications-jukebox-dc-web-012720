@@ -22,6 +22,9 @@ def play(songs)
   
   song_arr.each do |artist, title|
     if song_input == title
+      puts "Playing #{title}"
+    end
+  end
 end
 
 def exit_jukebox
