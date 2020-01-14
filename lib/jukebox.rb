@@ -17,9 +17,9 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.strip
+  song_number = song_input.to_i - 1
   
-  number = song_input.to_i - 1
-  binding.pry
+  if song_number < 0 && 
 end
 
 def exit_jukebox
