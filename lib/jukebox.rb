@@ -1,4 +1,7 @@
 # Add your code here
+require "pry"
+
+
 def help 
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -15,16 +18,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.strip
   
-  song_arr = []
-    songs.each do |song|
-      song_arr << song.split(" - ")
-    end
-  
-  song_arr.each do |artist, title|
-    if song_input == title
-      puts "Playing #{title}"
-    end
-  end
+  number = song_input.to_i - 1
+  binding.pry
 end
 
 def exit_jukebox
