@@ -12,5 +12,5 @@ def list(song)
 end
 
 def play 
-  
+  song_input = gets.strip
 end
