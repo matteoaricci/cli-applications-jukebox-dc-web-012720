@@ -11,11 +11,17 @@ def list(song)
   song.each_with_index { |song, index| puts "#{index + 1}: #{song}" }
 end
 
-def play(song)
+def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.strip
   
-  puts song_input
+  song_arr = []
+    songs.each do |song|
+      song_arr << song.split(" - ")
+    end
+  
+  song_arr.each do |artist, title|
+    if song_input == title
 end
 
 def exit_jukebox
