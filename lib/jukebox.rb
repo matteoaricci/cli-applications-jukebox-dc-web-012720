@@ -8,7 +8,7 @@ def help
 end
 
 def list(song)
-  song.each_with_index { |song, index| puts "#{index}: #{item}" }
+  song.each_with_index { |song, index| puts "#{index}: #{song}" }
   
   
 end
