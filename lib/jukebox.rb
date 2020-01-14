@@ -36,6 +36,14 @@ def run
   puts "Please enter a command:"
   input = gets.strip
   
-  if input != "exit"
-    
+  case input 
+    when "list"
+      list(songs)
+    when "help"
+      help
+    when "play"
+      play(songs)
+    when "exit"
+      exit_jukebox
+    end
 end
